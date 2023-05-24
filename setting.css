@@ -1,0 +1,37 @@
+.box-container {
+    height: 400px;
+    width: 500px;
+   background-color: rgb(249, 249, 12);
+    border:solid 2px black;
+    margin:20px;
+
+}
+
+.a, .b{
+    height: 100px;
+    width: 200px;
+    border: solid 2px black;
+    margin: 10px;
+}
+.a{
+    background-image: url(/images/image-tree.jpg);
+    background-size: 70px 50px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+
+.box-container:first-child{
+    background-color: red;
+    position:relative ;
+    position: absolute;
+    z-index: -2;
+    top: 10%;
+    left: 30%;
+}
+.box-container:nth-child(4){
+    background-color: blue;
+    position: fixed;
+    top: 30%;
+    left: 70%;
+}

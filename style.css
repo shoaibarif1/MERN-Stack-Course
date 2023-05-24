@@ -1,0 +1,164 @@
+
+        body{
+            margin: 0%;
+            box-sizing: border-box;
+            min: height 100vh; ;
+        }
+        
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        /*
+        style for button
+        */
+        /*
+        article{
+            height: 500px;
+            width: 500px;
+        }*/
+        .button {
+            background-color: rgb(243, 188, 113);
+            color: rgb(0, 0, 0);
+            margin: 50px;
+            padding: 10px 20px;
+            border: solid 2px rgb(15, 16, 1);
+            border-radius: 10%;
+            font-size: larger;
+            text-decoration: dotted;
+            font-family:Arial, Helvetica, sans-serif;
+            transition: 03s;
+
+        }
+        button{
+            background-color: rgb(218, 152, 60);
+            color: rgb(0, 0, 0);
+            margin: 50px;
+            padding: 10px 20px;
+            border: solid 2px black;
+            border-radius: 10%;
+            font-size: larger;
+            text-decoration: dotted;
+            font-family:Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            transition: 0.3s;
+            
+        }
+        button:hover{
+            background-color: beige;
+        }
+        .button:hover{
+            background-color: beige;
+        }
+        section{
+
+            height: 600px;
+            background-color: lightcyan;
+
+        }
+
+        .image{
+            width: 300px;
+            height: auto;
+            border-radius: 20px;
+            float: right;
+        }
+        .navbar{
+            margin: 0%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            list-style: none;
+            height: 50px;
+            background-color: rgb(5, 3, 0);
+
+        }
+        .flex-container{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            border: 3px black;
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            flex-wrap:wrap;
+
+
+        }
+
+        .flex-elements{
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            color: white;
+            border: solid 2px white;
+        }
+        footer{
+            height: 10px;
+            width: auto;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        aside{
+            float: left;
+            min-height: calc(100vh-100px);
+            background-color: palegoldenrod;
+
+
+        }
+        section p{
+            font-family: cursive;
+        }
+        .flex-container .flex-elements:nth-child(1){
+            background-color: red;
+        }
+        section h1 + p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: greenyellow;
+            /*transform: translate(100px 500px) rotate(90deg) skew(2deg,10deg) scale(1.5
+            ) ;*/
+            animation-name: changelocation;
+            animation-duration : 4s;
+            animation-iteration-count: infinite;
+            position: relative;
+
+        }
+        @keyframes changelocation{
+            0%{
+                left: 0px;
+                top: 0px;
+
+            }
+            25%{
+                background-color: red;
+                left: 200px;
+                top: 0px;
+
+            }
+            50%{
+                background-color: blue;
+                left: 200px;
+                top: 200;
+            }
+            75%{
+                background-color: pink;
+                left: 0px;
+                top: 200px;
+
+
+            }
+            100%{
+                background-color: yellowgreen;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+  
